@@ -4,6 +4,8 @@ version = "0.1.0"
 authors = ["Baze <basileaw@gmail.com>"]
 description = "A chat interface implementation"
 packages = [{ include = "chatline" }]
+readme = "README.md"
+repository = "https://github.com/anotherbazeinthewall/chatline-interface"
 
 [build-system]
 requires = ["poetry-core"]
@@ -19,7 +21,8 @@ prompt-toolkit = "*"
 [tool.poetry.group.dev.dependencies]
 fastapi = "*"
 uvicorn = "*"
-poethepoet = "^0.32.2"
+poethepoet = "*"
+python-dotenv = "*"
 
 [tool.poe.tasks]
 embedded-client = "python examples/client.py"
